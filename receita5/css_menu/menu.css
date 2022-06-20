@@ -1,0 +1,59 @@
+:root{
+    --corFundoMenu: #ee9c9c;
+}
+
+#btn-mobile{
+    display: none;
+    width: 60px;
+    height: 30px;
+    margin-right: 2%;
+    align-content: flex-end;
+    font-size: 1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    right: 3px;
+    z-index: 100;
+
+}
+
+@media (max-width: 800px){
+    #btn-mobile{
+        display: block !important;
+    }
+
+    #menu{
+        display: block;
+        position: absolute;
+        font-size: 16px;
+        width: 100%;
+        top: 50Px;
+        right: 0px;
+        background-color: var(--corFundoMenu);
+        z-index: 100000;
+        transition: .6s;
+        visibility: hidden;
+        height: 0px;
+        overflow-y: hidden;
+    }
+    
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+       
+    }
+
+    #menu a{
+        padding-inline-end: 1rem 0;
+        margin: 0 1rem;
+        width: 100%;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    }
+
+    #menu li{
+        width: 100%;
+    }
+}

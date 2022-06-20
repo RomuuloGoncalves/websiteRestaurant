@@ -1,0 +1,337 @@
+* {
+	margin: 0px;
+	padding: 0px;
+    font-weight: 600;
+}
+
+:root {
+	--corFundo: #ffe3e3;
+	--corLetra: #383b42;
+	--corDetalhes: #ff7070;
+	--black:#000;
+	--menu:#eb4141;
+}
+
+body {
+	font-family: sans-serif;
+	height: max-content;
+	min-height: 100vh;
+	max-width: auto;
+	max-height: auto;
+	background-color: var(--corFundo);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.texto{
+	color: var(--corLetra);
+}
+.logo {
+	font-size: 42px;
+}
+ion-icon {
+	font-size: 2.5rem;
+	color: var(--black);
+}
+a{
+	color: var(--black);
+
+}
+header,
+footer {
+	width: 100%;
+	height: auto;
+	background-color: var(--menu);
+	color: var(--black);
+}
+
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-end;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.social {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-direction: row;
+
+	flex: 1 1 1px;
+	min-width: 300px;
+	max-width: 25%;
+	max-height: auto;
+}
+
+.logomarca {
+	box-sizing: border-box;
+	padding: 0.8%;
+}
+
+.copy, .social, .logomenu{
+	padding: 0.8%;
+}
+
+.social a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 0.5%;
+}
+
+.logomenu ul {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+}
+.logomenu a{
+	font-size: 36px;
+}
+
+header a,
+header li {
+	list-style: none;
+	text-decoration: none;
+}
+
+img {
+	min-width: 9000px;
+	max-width: 1000px;
+	max-height: 450px;
+}
+
+main {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+img {
+	min-width: 315px;
+	max-width: 900px;
+	flex: 1 1 150px;
+}
+
+section {
+	margin: auto 40px auto 40px;
+	width: 50%;
+	text-align: center;
+	display: flex;
+	flex: 1 0 550px;
+	justify-content: center;
+}
+
+article {
+	flex: 1 0 550px;
+	margin: 50px auto;
+	font-size: 24px;
+	min-width: 40%;
+	max-height: 90%;
+}
+
+p {
+	flex: 0 1 150px;
+}
+
+.texto1 {
+	margin-bottom: 20px;
+}
+
+li,
+.menu a {
+	list-style: none;
+	text-decoration: none;
+}
+
+.menu2 li, .menu2 a{
+	width: 250px !important;
+	color: var(--black);
+
+	
+}
+
+.menu2 li{
+	display: flex;
+	align-items: center;
+	background-color: var(--corDetalhes);
+	margin: 3px auto;
+}
+
+
+.menu {
+	width: 100%;
+	margin: 2px 0px;
+	margin-top: 10px;
+	background-color: var(--menu);
+	height: auto;
+}
+.menu,
+.menu nav {
+	display: flex;
+}
+
+.menu nav {
+	width: 100%;
+}
+.menu li {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	padding: 5px;
+}
+section ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	flex: 2 1 150px;
+	font-size: 20px;
+}
+
+@media (max-width: 375px) {
+	.logomarca {
+		font-size: 40px !important;
+	}
+	article {
+		font-size: 15px !important;
+	}
+
+	.copy {
+		font-size: 18px !important;
+	}
+
+	.social {
+		max-width: 100%;
+	}
+	.menu li {
+		border-left: 2px solid black;
+		border-right: 2px solid black;
+		padding: 5px;
+	}
+	.menu li {
+		border-left: none;
+		border-right: none;
+		padding: 5px;
+	}
+}
+
+@media (max-width: 425px) {
+	.logomarca,
+	.logomenu {
+		font-size: 38px;
+	}
+	article {
+		font-size: 17px;
+	}
+
+	.copy {
+		font-size: 22px;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+
+	footer {
+		justify-content: center;
+	}
+	.social {
+		width: 100%;
+	}
+
+	.copy {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 800px) {
+	#menu {
+		display: none;
+	}
+
+	article {
+		flex-shrink: 1;
+	}
+
+	section {
+		margin-top: 20px;
+		height: auto;
+		width: 90%;
+		margin: auto;
+	}
+
+	img {
+		min-width: 200px;
+		max-width: 100%;
+	}
+	.logomarca,
+	.logomenu {
+		font-size: 36px;
+	}
+
+	main {
+		flex-direction: column;
+		box-sizing: border-box;
+		margin: 0px 5px;
+	}
+
+	article {
+		font-size: 18px;
+	}
+
+	body {
+		height: 160vh;
+	}
+
+	.copy {
+		font-size: 24px;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+
+	img {
+		min-width: 315px;
+		max-width: 900px;
+		flex: 1 1 150px;
+	}
+
+	section {
+		flex: 2 2 150px;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 1440px) {
+	.logo {
+		font-size: 45px;
+	}
+
+	article {
+		font-size: 22px;
+	}
+
+	main {
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+
+	.copy {
+		font-size: 1.5rem;
+	}
+}

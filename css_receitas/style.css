@@ -1,0 +1,285 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-weight: 600;
+}
+
+:root {
+	--corFundo: #ffe3e3;
+	--corLetra: #383b42;
+	--corDetalhes: #ff7070;
+	--black: #000;
+	--menu: #eb4141;
+}
+
+body {
+	font-family: sans-serif;
+	height: max-content;
+	min-height: 100vh;
+	max-width: auto;
+	max-height: auto;
+	background-color: var(--corFundo);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.texto {
+	color: var(--corLetra);
+}
+.logo {
+	font-size: 42px;
+}
+ion-icon {
+	font-size: 2.5rem;
+	color: var(--black);
+}
+
+a {
+	color: var(--black);
+}
+header,
+footer {
+	width: 100%;
+	height: auto;
+	background-color: var(--menu);
+	color: var(--black);
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-end;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.social {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-direction: row;
+
+	flex: 1 1 1px;
+	min-width: 300px;
+	max-width: 25%;
+	max-height: auto;
+}
+
+.logomarca {
+	box-sizing: border-box;
+	padding: 0.8%;
+}
+
+.copy,
+.social,
+.logomenu {
+	padding: 0.8%;
+}
+
+.social {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-direction: row;
+
+	flex: 1 1 1px;
+	min-width: 300px;
+	max-width: 25%;
+	max-height: auto;
+}
+
+.social a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 0.5%;
+}
+
+.logomenu ul {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+}
+.logomenu a {
+	font-size: 36px;
+}
+
+header a,
+header li {
+	list-style: none;
+	text-decoration: none;
+}
+
+main {
+	margin: auto 5%;
+}
+
+.receita {
+	margin-top: 10px;
+}
+
+.preparo {
+	margin-bottom: 10px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.receita li {
+	margin-bottom: 5px;
+}
+
+img {
+	max-width: 100%;
+	margin-top: 10px;
+}
+
+/*  */
+
+.menu a {
+	list-style: none;
+	text-decoration: none;
+}
+
+.menu,
+.menu nav {
+	display: flex;
+}
+
+.menu2 li,
+.menu2 a {
+	width: 250px !important;
+	color: var(--black);
+}
+
+.menu li {
+	text-align: center;
+}
+
+.menu2 li {
+	display: flex;
+	align-items: center;
+	background-color: var(--corDetalhes);
+	margin: 3px auto;
+}
+
+section {
+	flex: 2 2 150px;
+	max-width: 100%;
+}
+
+.menu {
+	width: 100%;
+	margin: 2px 0px;
+	margin-top: 10px;
+	background-color: var(--menu);
+	height: auto;
+}
+
+.menu nav {
+	width: 100%;
+}
+.menu li {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	padding: 5px;
+}
+
+.menu ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	flex: 2 1 150px;
+	font-size: 20px;
+}
+
+h3 {
+	margin-bottom: 9px;
+	margin-top: 15px;
+}
+
+img {
+	border-radius: 50px;
+	box-shadow: rgb(34, 33, 33) 2px 3px 2px 4px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+}
+.anuncio1 img {
+	box-shadow: 4px 5px 5px black;
+}
+
+.anuncio2 img {
+	box-shadow: -4px 5px 5px black;
+}
+
+.anuncio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.anuncio img {
+	border-radius: 0px;
+	height: 90%;
+}
+.anuncio1 {
+	margin-left: 3px;
+}
+
+.anuncio2 {
+	margin-right: 3px;
+}
+
+/* monitores */
+@media (max-width: 1200px) {
+}
+
+/* notebooks */
+@media (max-width: 1024px) {
+}
+
+/* Dispositivos médios, tablets */
+@media (max-width: 800px) {
+	.grid {
+		display: block;
+	}
+	.logomenu {
+		display: none;
+	}
+
+	main {
+		margin: auto 20px;
+	}
+
+	.receita {
+		font-size: 14px;
+	}
+	.anuncio {
+		display: none;
+	}
+
+	footer{
+		justify-content: center;
+	}
+}
+
+/* Dispositivos pequenos, celular */
+@media (max-width: 480px) {
+	.menu li {
+		border-left: none;
+		border-right: none;
+		padding: 5px;
+	}
+}
